@@ -13,3 +13,41 @@
 @media(max-width:760px){.profile-home>.plan-section{margin-top:35px}}
 .profile-contact{display:flex;flex-direction:column;gap:7px;margin:22px 0 0;font-style:normal;font-size:12px;line-height:1.8}.profile-contact a{display:flex;align-items:baseline;gap:16px;width:fit-content;max-width:100%;overflow-wrap:anywhere}.contact-label{flex:0 0 40px;color:var(--muted);font-size:11px}.profile-contact a:hover>span:last-child{color:var(--green);text-decoration:underline;text-underline-offset:3px}.profile-cv-links{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;margin-top:23px;font-size:12px}.cv-view{display:inline-block;padding:8px 13px;border:1px solid var(--green);border-radius:3px;color:var(--green)}.cv-view:hover{background:var(--soft)}.cv-download{color:var(--muted)}.cv-download:hover{color:var(--green);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:760px){.profile-contact{margin-top:19px}.profile-contact a{gap:12px}.profile-cv-links{margin-top:20px;gap:12px 18px}.cv-view{padding:8px 11px}}
+
+.blog-intro {
+  padding: 55px 0 35px;
+}
+.blog-intro h1 {
+  margin: 0 0 6px;
+  color: var(--green);
+  font: 600 43px/1.2 var(--serif);
+  letter-spacing: 2px;
+}
+.blog-intro p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.blog-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--green);
+}
+.blog-sections a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.profile-english-name {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 0.6em;
+  letter-spacing: 0;
+}
+@media (max-width: 760px) {
+  .blog-intro { padding: 37px 0 27px; }
+  .blog-intro h1 { font-size: 36px; }
+}
