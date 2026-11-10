@@ -47,6 +47,21 @@
   font-size: 0.6em;
   letter-spacing: 0;
 }
+.profile-details {
+  margin-top: 29px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.profile-details h2 {
+  margin: 0 0 9px;
+  font: 600 21px/1.4 var(--serif);
+}
+.profile-details p, .profile-details ul {
+  margin: 0 0 12px;
+}
+.profile-details ul { padding-left: 20px; }
+.profile-details .profile-contact { margin-top: 0; }
+.profile-details .profile-cv-links { margin: 14px 0; }
 @media (max-width: 760px) {
   .blog-intro { padding: 37px 0 27px; }
   .blog-intro h1 { font-size: 36px; }
