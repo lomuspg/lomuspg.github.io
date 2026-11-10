@@ -62,6 +62,23 @@
 .profile-details ul { padding-left: 20px; }
 .profile-details .profile-contact { margin-top: 0; }
 .profile-details .profile-cv-links { margin: 14px 0; }
+.profile-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 24px 32px;
+  align-items: start;
+}
+.profile-portrait { display: block; }
+.profile-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (max-width: 560px) {
+  .profile-overview { grid-template-columns: minmax(0, 1fr); }
+  .profile-portrait { width: min(156px, 100%); }
+}
 @media (max-width: 760px) {
   .blog-intro { padding: 37px 0 27px; }
   .blog-intro h1 { font-size: 36px; }
