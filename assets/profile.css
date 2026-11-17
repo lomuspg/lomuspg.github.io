@@ -106,6 +106,21 @@ address { font-style: normal; }
 .blog-arrow { font-size: 24px; line-height: 1; }
 .page-footer { display: flex; justify-content: space-between; gap: 15px; max-width: 920px; padding: 25px 1px 30px; color: var(--muted); font-size: 12px; }
 .page-footer a { color: var(--muted); }
+.coursework { font-size: 14px; line-height: 1.8; margin-bottom: 23px; }
+.writing-entry { display: block; }
+.writing-entry strong { font-size: 16px; }
+.writing-entry > span { display: block; color: var(--muted); font-size: 14px; }
+.writing-more { font-size: 13px; margin: 12px 0 0; }
+.page-title { margin-bottom: 20px; }
+.research-card .content-section:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
+.research-interests { margin-bottom: 0; }
+.research-entry { margin-bottom: 26px; }
+.research-entry:last-child { margin-bottom: 0; }
+.entry-heading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 3px 18px; }
+.entry-context { margin: 4px 0 11px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.research-points { margin: 0; padding-left: 19px; font-size: 15px; line-height: 1.8; }
+.research-points li + li { margin-top: 5px; }
+.research-resource { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-top: 18px; font-size: 14px; }
 @media (min-width: 1600px) {
   :root { --sidebar-width: 290px; }
   .sidebar { padding-left: 38px; padding-right: 38px; }

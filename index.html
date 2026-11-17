@@ -12,7 +12,7 @@
   <title>Jiayi Zhu · 朱嘉怡</title>
   <link rel="canonical" href="https://lomuspg.github.io/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/profile.css?v=20261117">
+  <link rel="stylesheet" href="/assets/profile.css?v=20261117b">
   <script>
     try {
       if (localStorage.getItem('notes-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
@@ -20,8 +20,9 @@
   </script>
   <script>
     if (location.hash === '#notes' || location.hash === '#plans') location.replace('/blog/' + location.hash);
+    if (location.hash === '#research' || location.hash === '#research-title') location.replace('/research/');
   </script>
-  <script src="/assets/profile.js?v=20261117" defer></script>
+  <script src="/assets/profile.js?v=20261117b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -36,20 +37,14 @@
       </div>
     </header>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#about" aria-current="location">
+      <a href="/" aria-current="page">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg><span>Home</span>
       </a>
-      <a href="#research">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v7L4 20a.7.7 0 0 0 .6 1h14.8a.7.7 0 0 0 .6-1l-6-10V3M7 15h10"/></svg><span>Research</span>
-      </a>
-      <a href="#education">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5ZM6 10v7c4 3 8 3 12 0v-7M22 8v8"/></svg><span>Education</span>
-      </a>
       <a href="/blog/">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h14a2 2 0 0 1 2 2v16H6a2 2 0 0 1-2-2V3ZM4 17h16M8 7h8M8 11h6"/></svg><span>ACCIO Blog</span><span class="nav-arrow" aria-hidden="true">↗</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h14a2 2 0 0 1 2 2v16H6a2 2 0 0 1-2-2V3ZM4 17h16M8 7h8M8 11h6"/></svg><span>Blog</span>
       </a>
-      <a href="#contact">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>Contact</span>
+      <a href="/research/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v7L4 20a.7.7 0 0 0 .6 1h14.8a.7.7 0 0 0 .6-1l-6-10V3M7 15h10"/></svg><span>Research</span>
       </a>
     </nav>
     <div class="sidebar-bottom">
@@ -80,31 +75,23 @@
             <a href="https://github.com/lomuspg" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </section>
-        <section class="content-section" id="research" aria-labelledby="research-title">
-          <h2 id="research-title">Research and Projects</h2>
-          <ol class="research-timeline">
-            <li>
-              <p class="timeline-date"><time datetime="2026-09">Sep 2026</time> — Present</p>
-              <h3>Inference Optimization</h3>
-              <p>Participation in Professor Zhiyu Zhang’s discussion group on inference optimization at Zhejiang University.</p>
-            </li>
-            <li>
-              <p class="timeline-date"><time datetime="2026-07">Jul</time> — <time datetime="2026-08">Aug 2026</time></p>
-              <h3>Hallucinations in Multimodal Models</h3>
-              <p>A collaborative project studying hallucinations in multimodal models.</p>
-            </li>
-          </ol>
-        </section>
         <section class="content-section" id="education" aria-labelledby="education-title">
           <h2 id="education-title">Education</h2>
           <div class="education-heading"><h3>Zhejiang University</h3><p class="entry-date">2024 — Jun 2028, expected</p></div>
           <p class="degree">B.S. in Mathematics and Applied Mathematics</p>
           <p class="academic-record"><strong>GPA</strong> 4.79/5.00 <span aria-hidden="true">·</span> <strong>Rank</strong> 1/60</p>
+          <h3 class="subsection-title">Selected Coursework</h3>
+          <p class="coursework">Abstract Algebra; Complex Analysis; Elementary Number Theory; Numerical Linear Algebra; Artificial Neural Network Models and Algorithms; Python Programming.</p>
           <h3 class="subsection-title">Honors and Awards</h3>
           <ul class="honors-list">
             <li><span>National Scholarship</span><span class="entry-date">2025, 2026</span></li>
             <li><span>Provincial Second Prize, Chinese Mathematics Competitions for College Students</span><span class="entry-date">2025</span></li>
           </ul>
+        </section>
+        <section class="content-section" id="writing" aria-labelledby="writing-title">
+          <h2 id="writing-title">Writing</h2>
+          <a class="writing-entry" href="/reinforcement-learning.html"><strong>Reinforcement Learning Fundamentals <span aria-hidden="true">↗</span></strong><span>Value functions, action values, and policy optimization.</span></a>
+          <p class="writing-more"><a href="/blog/">More notes on ACCIO <span aria-hidden="true">↗</span></a></p>
         </section>
         <section class="content-section" id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
