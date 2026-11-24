@@ -83,3 +83,23 @@
   .blog-intro { padding: 37px 0 27px; }
   .blog-intro h1 { font-size: 36px; }
 }
+
+.site-header nav .language-switch {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 8px;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  html[lang="en"] .blog-home .plan-row {
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+
+  html[lang="en"] .blog-home .plan-status {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0;
+  }
+}

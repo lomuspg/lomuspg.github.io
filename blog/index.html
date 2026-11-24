@@ -7,8 +7,10 @@
   <meta name="theme-color" content="#174d3c">
   <title>ACCIO · 朱嘉怡的博客</title>
   <link rel="canonical" href="https://lomuspg.github.io/blog/">
+  <link rel="alternate" hreflang="zh-CN" href="https://lomuspg.github.io/blog/">
+  <link rel="alternate" hreflang="en" href="https://lomuspg.github.io/blog/en/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style.css?v=blog-languages">
   <script>
     try {
       if (localStorage.getItem('notes-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
@@ -20,8 +22,8 @@
   <a class="brand personal-brand" href="/blog/">ACCIO</a>
   <nav aria-label="主导航">
     <a href="/">Home</a>
-    <a href="/blog/" aria-current="page">Blog</a>
     <a href="/research/">Research</a>
+    <a class="language-switch" href="/blog/en/" lang="en" hreflang="en">English</a>
     <button class="theme-toggle" aria-label="切换深浅主题" title="切换深浅主题">◐</button>
   </nav>
 </header>
@@ -48,7 +50,7 @@
  </section>
 </main>
 <footer class="site-footer">
-  <a class="footer-brand" href="/blog/">ACCIO</a>
+  <span class="footer-brand">ACCIO</span>
   <a href="/">朱嘉怡的个人主页 ↗</a>
 </footer>
 <script src="/assets/app.js"></script>

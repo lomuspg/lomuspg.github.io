@@ -1,7 +1,15 @@
 document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const dark=document.documentElement.dataset.theme!=='dark';if(dark)document.documentElement.dataset.theme='dark';else delete document.documentElement.dataset.theme;try{localStorage.setItem('notes-theme',dark?'dark':'light')}catch{}});
 const toast=document.getElementById('toast');let toastTimer;
 function announce(message){if(!toast)return;toast.textContent=message;toast.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('visible'),2500)}
-document.getElementById('copy-link')?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.origin+location.pathname);announce('文章链接已复制')}catch{announce('可从地址栏复制文章链接')}});
+document.getElementById('copy-link')?.addEventListener('click', async () => {
+  const isEnglish = document.documentElement.lang === 'en';
+  try {
+    await navigator.clipboard.writeText(location.origin + location.pathname);
+    announce(isEnglish ? 'Article link copied' : '文章链接已复制');
+  } catch {
+    announce(isEnglish ? 'Copy the link from the address bar' : '可从地址栏复制文章链接');
+  }
+});
 const topButton=document.querySelector('.back-top'),progress=document.querySelector('.progress-bar');
 const chapterLinks=[...document.querySelectorAll('.toc a')];const chapters=chapterLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 let ticking=false;function updateReading(){const max=document.documentElement.scrollHeight-innerHeight;if(progress)progress.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%';topButton?.classList.toggle('visible',scrollY>600);let active=chapters[0];for(const chapter of chapters){if(chapter.getBoundingClientRect().top<150)active=chapter}for(const link of chapterLinks){const selected=link.getAttribute('href')==='#'+active?.id;link.classList.toggle('active',selected);if(selected)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')}ticking=false}
