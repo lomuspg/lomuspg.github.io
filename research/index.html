@@ -119,7 +119,17 @@
           <article class="research-entry talk-entry" id="talk-agentic-rl-20261111">
             <div class="entry-heading"><h3>From Game-playing to Tool-using Agents</h3><time class="entry-date" datetime="2026-11-11">Nov 11, 2026</time></div>
             <p class="entry-context">Inference Optimization Reading Group · Zhejiang University</p>
-            <p class="talk-abstract">A presentation on reinforcement learning for interactive agents, from game control to browser and tool use. The talk covered PPO and GRPO, trajectory-level training in OpenWebRL, and turn-level credit assignment in ToolVerse, including TARA. It also discussed reward reliability, exploration, and generalization over long interactions.</p>
+            <p class="talk-abstract">The talk focused on OpenWebRL and how it trains visual agents through repeated interactions with live websites. I walked through the supervised warm start, how the system collects and scores complete browsing trajectories, and how those rewards guide policy updates. I used ToolVerse as a brief comparison to discuss feedback at the level of individual turns.</p>
+            <div class="research-resource">
+              <a href="/talks/agentic-rl-20261111.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
+              <a href="https://arxiv.org/abs/2606.02031" target="_blank" rel="noopener noreferrer">OpenWebRL paper <span aria-hidden="true">↗</span></a>
+            </div>
+            <section aria-labelledby="agentic-rl-reflections">
+              <h4 id="agentic-rl-reflections">Reflections on Reinforcement Learning</h4>
+              <p>When I first moved from supervised learning to reinforcement learning, the possibilities suddenly felt wider. I had been thinking in terms of fitting a model to examples. The idea that an agent could learn from the consequences of its own actions, with a reward signal telling it what worked, made me excited about what it might eventually learn to do.</p>
+              <p>Deep learning greatly expanded the range of problems reinforcement learning could tackle. As methods matured in well-defined settings, ideas such as value estimation and policy gradients became standard tools. Much of the work I have read builds on those ideas by refining how they are used. The rise of foundation models shifted some attention toward pretraining and scale, while learning reliably from interaction remains an open problem.</p>
+              <p>In real environments, a small bias in how success is measured or random variation in what an agent encounters can derail training. My sense is that the quality and coverage of experience, along with the compute available to collect and learn from it, often matter more than a small change to the optimizer. I would start with an important task where acting and receiving feedback come naturally. Once the environment is clear, it is easier to see which data to collect and which algorithms to test.</p>
+            </section>
           </article>
         </section>
       </article>
