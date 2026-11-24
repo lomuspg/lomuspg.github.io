@@ -110,6 +110,8 @@ address { font-style: normal; }
 .writing-entry { display: block; }
 .writing-entry strong { font-size: 16px; }
 .writing-entry > span { display: block; color: var(--muted); font-size: 14px; }
+.writing-entry + .writing-entry { margin-top: 18px; }
+.writing-entry > .writing-meta { font-size: 12px; margin-bottom: 3px; }
 .writing-more { font-size: 13px; margin: 12px 0 0; }
 .page-title { margin-bottom: 20px; }
 .research-card .content-section:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
@@ -121,6 +123,11 @@ address { font-style: normal; }
 .research-points { margin: 0; padding-left: 19px; font-size: 15px; line-height: 1.8; }
 .research-points li + li { margin-top: 5px; }
 .research-resource { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-top: 18px; font-size: 14px; }
+.talk-entry + .talk-entry { padding-top: 24px; border-top: 1px solid var(--line); }
+.talk-photo { margin: 18px 0 0; }
+.talk-photo a { display: block; }
+.talk-photo img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+.talk-photo figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 @media (min-width: 1600px) {
   :root { --sidebar-width: 290px; }
   .sidebar { padding-left: 38px; padding-right: 38px; }

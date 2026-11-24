@@ -12,7 +12,7 @@
   <title>Research · Jiayi Zhu</title>
   <link rel="canonical" href="https://lomuspg.github.io/research/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/profile.css?v=20261117b">
+  <link rel="stylesheet" href="/assets/profile.css?v=20261124">
   <script>
     try {
       if (localStorage.getItem('notes-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
@@ -97,9 +97,24 @@
             </ul>
           </div>
         </section>
-        <section class="content-section" aria-labelledby="talks-title">
+        <section class="content-section" id="talks" aria-labelledby="talks-title">
           <h2 id="talks-title">Talks</h2>
-          <article class="research-entry" id="talk-agentic-rl-20261111">
+          <article class="research-entry talk-entry" id="talk-care-20261120">
+            <div class="entry-heading"><h3>Mitigating Cross-Modal Hallucinations by Correcting Modality Misrouting in Omni-Modal LLMs</h3><time class="entry-date" datetime="2026-11-20">Nov 20, 2026</time></div>
+            <p class="entry-context">Lightning Talk · CaRe: Conflict-aware Residual Intervention</p>
+            <p class="talk-abstract">A lightning talk on CaRe, a training-free method for mitigating cross-modal hallucinations in omni-modal language models. The presentation focused on identifying modality misrouting and correcting fused representations with modality-specific residuals during prefill.</p>
+            <div class="research-resource">
+              <a href="/talks/care-lightning-talk-20261120.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
+              <a href="/assets/talks/care-lightning-talk-20261120.jpg" target="_blank" rel="noopener noreferrer">Full-size photo <span aria-hidden="true">↗</span></a>
+            </div>
+            <figure class="talk-photo">
+              <a href="/assets/talks/care-lightning-talk-20261120.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size lightning talk photo">
+                <img src="/assets/talks/care-lightning-talk-20261120.jpg" width="1708" height="1279" loading="lazy" decoding="async" alt="Jiayi Zhu presenting CaRe during a lightning talk on November 20, 2026.">
+              </a>
+              <figcaption>Presenting CaRe, November 20, 2026.</figcaption>
+            </figure>
+          </article>
+          <article class="research-entry talk-entry" id="talk-agentic-rl-20261111">
             <div class="entry-heading"><h3>From Game-playing to Tool-using Agents</h3><time class="entry-date" datetime="2026-11-11">Nov 11, 2026</time></div>
             <p class="entry-context">Inference Optimization Reading Group · Zhejiang University</p>
             <p class="talk-abstract">A presentation on reinforcement learning for interactive agents, from game control to browser and tool use. The talk covered PPO and GRPO, trajectory-level training in OpenWebRL, and turn-level credit assignment in ToolVerse, including TARA. It also discussed reward reliability, exploration, and generalization over long interactions.</p>
