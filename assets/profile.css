@@ -75,8 +75,6 @@ h1 { margin-bottom: 5px; font-size: clamp(30px, 3.4vw, 38px); font-weight: 650; 
 .quick-links { display: flex; flex-wrap: wrap; gap: 8px 23px; font-size: 14px; font-weight: 500; }
 .quick-links a { white-space: nowrap; }
 .quick-links span { font-size: 13px; padding-left: 3px; }
-.about-section .wechat-account { margin: 14px 0 0; font-size: 14px; }
-.wechat-account strong { color: var(--muted); font-weight: 500; margin-right: 8px; }
 .content-section { margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--line); }
 h2 { margin-bottom: 20px; font-size: 22px; line-height: 1.4; font-weight: 600; letter-spacing: -.35px; }
 h3 { margin-bottom: 4px; font-size: 16px; line-height: 1.5; font-weight: 600; }
@@ -95,6 +93,7 @@ h3 { margin-bottom: 4px; font-size: 16px; line-height: 1.5; font-weight: 600; }
 .subsection-title { margin-bottom: 10px; }
 .honors-list { margin: 0; padding: 0; list-style: none; }
 .honors-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 25px; padding: 6px 0; font-size: 15px; line-height: 1.7; }
+.honors-list strong { font-weight: 700; }
 address { font-style: normal; }
 .contact-list { margin: 0; font-size: 15px; }
 .contact-list > div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 12px; padding: 3px 0; }
@@ -103,10 +102,6 @@ address { font-style: normal; }
 .page-footer { display: flex; justify-content: space-between; gap: 15px; max-width: 920px; padding: 25px 1px 30px; color: var(--muted); font-size: 12px; }
 .page-footer a { color: var(--muted); }
 .coursework { font-size: 14px; line-height: 1.8; margin-bottom: 23px; }
-.writing-entry { display: block; }
-.writing-entry strong { font-size: 16px; }
-.writing-entry > span { display: block; color: var(--muted); font-size: 14px; }
-.writing-entry > .writing-meta { font-size: 12px; margin-bottom: 3px; }
 .page-title { margin-bottom: 20px; }
 .research-card .content-section:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
 .research-interests { margin-bottom: 0; }

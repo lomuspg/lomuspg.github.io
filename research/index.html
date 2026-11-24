@@ -12,7 +12,7 @@
   <title>Research · Jiayi Zhu</title>
   <link rel="canonical" href="https://lomuspg.github.io/research/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/profile.css?v=compact-photos">
+  <link rel="stylesheet" href="/assets/profile.css?v=profile-copy">
   <script>
     try {
       if (localStorage.getItem('notes-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
@@ -135,9 +135,8 @@
             </div>
             <section aria-labelledby="agentic-rl-reflections">
               <h4 id="agentic-rl-reflections">Reflections on Reinforcement Learning</h4>
-              <p>When I first moved from supervised learning to reinforcement learning, the possibilities suddenly felt wider. I had been thinking in terms of fitting a model to examples. The idea that an agent could learn from the consequences of its own actions, with a reward signal telling it what worked, made me excited about what it might eventually learn to do.</p>
-              <p>Deep learning greatly expanded the range of problems reinforcement learning could tackle. As methods matured in well-defined settings, ideas such as value estimation and policy gradients became standard tools. Much of the work I have read builds on those ideas by refining how they are used. The rise of foundation models shifted some attention toward pretraining and scale, while learning reliably from interaction remains an open problem.</p>
-              <p>In real environments, a small bias in how success is measured or random variation in what an agent encounters can derail training. My sense is that the quality and coverage of experience, along with the compute available to collect and learn from it, often matter more than a small change to the optimizer. I would start with an important task where acting and receiving feedback come naturally. Once the environment is clear, it is easier to see which data to collect and which algorithms to test.</p>
+              <p>I was drawn to reinforcement learning by the idea that agents could learn from the consequences of their own actions. My impression is that many of the easier theoretical gains are behind us. Much of the work I read now refines familiar algorithms.</p>
+              <p>Reinforcement learning is easiest to make work in controlled settings, where we can collect enough experience, process the data consistently, and get reliable feedback. In messier environments, those constraints can matter more than another algorithmic tweak.</p>
             </section>
           </article>
         </section>
