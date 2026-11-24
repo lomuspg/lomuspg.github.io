@@ -99,6 +99,10 @@ address { font-style: normal; }
 .contact-list > div { display: grid; grid-template-columns: 11em minmax(0, 1fr); gap: 12px; padding: 3px 0; }
 .contact-list dt { color: var(--muted); }
 .contact-list dd { margin: 0; overflow-wrap: anywhere; }
+.wechat-qr summary { width: fit-content; color: var(--link); cursor: pointer; }
+.wechat-qr summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.wechat-qr img { display: block; width: min(172px, 100%); height: auto; margin-top: 8px; }
+.wechat-qr p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
 .page-footer { display: flex; justify-content: space-between; gap: 15px; max-width: 920px; padding: 25px 1px 30px; color: var(--muted); font-size: 12px; }
 .page-footer a { color: var(--muted); }
 .coursework { font-size: 14px; line-height: 1.8; margin-bottom: 23px; }
