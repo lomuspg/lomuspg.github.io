@@ -12,7 +12,7 @@
   <title>Research · Jiayi Zhu</title>
   <link rel="canonical" href="https://lomuspg.github.io/research/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/profile.css?v=blog-languages">
+  <link rel="stylesheet" href="/assets/profile.css?v=compact-photos">
   <script>
     try {
       if (localStorage.getItem('notes-theme') === 'dark') document.documentElement.dataset.theme = 'dark';
@@ -24,9 +24,9 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <aside class="sidebar" aria-label="Profile and navigation">
     <header class="sidebar-profile">
-      <a class="portrait" href="/assets/jiayi-zhu-portrait.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size portrait">
+      <div class="portrait">
         <img src="/assets/jiayi-zhu-portrait.jpg" width="1077" height="1460" alt="Portrait of Jiayi Zhu">
-      </a>
+      </div>
       <div class="sidebar-identity">
         <a class="site-name" href="/">Jiayi Zhu</a>
         <p class="site-role">Undergraduate Student<br>Zhejiang University</p>
@@ -104,25 +104,34 @@
           <article class="research-entry talk-entry" id="talk-care-20261120">
             <div class="entry-heading"><h3>Mitigating Cross-Modal Hallucinations by Correcting Modality Misrouting in Omni-Modal LLMs</h3><time class="entry-date" datetime="2026-11-20">Nov 20, 2026</time></div>
             <p class="entry-context">Lightning Talk · CaRe: Conflict-aware Residual Intervention</p>
-            <p class="talk-abstract">A lightning talk on CaRe, a training-free method for mitigating cross-modal hallucinations in omni-modal language models. The presentation focused on identifying modality misrouting and correcting fused representations with modality-specific residuals during prefill.</p>
-            <div class="research-resource">
-              <a href="/talks/care-lightning-talk-20261120.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
-              <a href="/assets/talks/care-lightning-talk-20261120.jpg" target="_blank" rel="noopener noreferrer">Full-size photo <span aria-hidden="true">↗</span></a>
-            </div>
-            <figure class="talk-photo">
-              <a href="/assets/talks/care-lightning-talk-20261120.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size lightning talk photo">
+            <div class="talk-overview">
+              <div>
+                <p class="talk-abstract">CaRe addresses cases where an irrelevant sound or image leads a model away from the evidence it needs. It detects conflicts between the model's predictions and uses the relevant modality to adjust the combined representation before decoding.</p>
+                <div class="research-resource">
+                  <a href="/talks/care-lightning-talk-20261120.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
+                </div>
+              </div>
+              <figure class="talk-photo">
                 <img src="/assets/talks/care-lightning-talk-20261120.jpg" width="1708" height="1279" loading="lazy" decoding="async" alt="Jiayi Zhu presenting CaRe during a lightning talk on November 20, 2026.">
-              </a>
-              <figcaption>Presenting CaRe, November 20, 2026.</figcaption>
-            </figure>
+                <figcaption>CaRe lightning talk</figcaption>
+              </figure>
+            </div>
           </article>
           <article class="research-entry talk-entry" id="talk-agentic-rl-20261111">
             <div class="entry-heading"><h3>From Game-playing to Tool-using Agents</h3><time class="entry-date" datetime="2026-11-11">Nov 11, 2026</time></div>
             <p class="entry-context">Inference Optimization Reading Group · Zhejiang University</p>
-            <p class="talk-abstract">The talk focused on OpenWebRL and how it trains visual agents through repeated interactions with live websites. I walked through the supervised warm start, how the system collects and scores complete browsing trajectories, and how those rewards guide policy updates. I used ToolVerse as a brief comparison to discuss feedback at the level of individual turns.</p>
-            <div class="research-resource">
-              <a href="/talks/agentic-rl-20261111.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
-              <a href="https://arxiv.org/abs/2606.02031" target="_blank" rel="noopener noreferrer">OpenWebRL paper <span aria-hidden="true">↗</span></a>
+            <div class="talk-overview">
+              <div>
+                <p class="talk-abstract">OpenWebRL trains visual agents on live websites. I explained how it starts with supervised training, then uses scores from complete browsing trajectories to update the policy. ToolVerse provided a brief comparison for feedback on individual turns.</p>
+                <div class="research-resource">
+                  <a href="/talks/agentic-rl-20261111.pptx" download>Download slides <span aria-hidden="true">↓</span></a>
+                  <a href="https://arxiv.org/abs/2606.02031" target="_blank" rel="noopener noreferrer">OpenWebRL paper <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+              <figure class="talk-photo">
+                <img src="/assets/talks/agentic-rl-20261111.jpg" width="1260" height="940" loading="lazy" decoding="async" alt="Jiayi Zhu presenting a slide on PPO and GRPO during the reinforcement learning talk.">
+                <figcaption>Comparing PPO and GRPO</figcaption>
+              </figure>
             </div>
             <section aria-labelledby="agentic-rl-reflections">
               <h4 id="agentic-rl-reflections">Reflections on Reinforcement Learning</h4>

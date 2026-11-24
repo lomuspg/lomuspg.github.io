@@ -45,9 +45,8 @@ strong { font-weight: 600; }
 .skip-link:focus { top: 12px; }
 .sidebar { position: fixed; inset: 0 auto 0 0; z-index: 2; display: flex; flex-direction: column; width: var(--sidebar-width); padding: 45px 24px 25px; background: var(--sidebar-bg); border-right: 1px solid var(--line); overflow-y: auto; }
 .sidebar-profile { padding: 0 16px 26px; }
-.portrait { display: block; width: 114px; height: 114px; margin-bottom: 20px; border: 2px solid var(--card-bg); border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 1px var(--line); }
-.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 43%; transition: transform .2s; }
-.portrait:hover img { transform: scale(1.04); }
+.portrait { display: block; width: 88px; height: 88px; margin-bottom: 16px; border: 2px solid var(--card-bg); border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 1px var(--line); }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 43%; }
 .site-name { color: var(--heading); font-size: 26px; line-height: 1.35; font-weight: 700; letter-spacing: -.6px; }
 .site-name:hover { text-decoration: none; }
 .site-role { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 9px 0 0; }
@@ -119,8 +118,10 @@ address { font-style: normal; }
 .research-points li + li { margin-top: 5px; }
 .research-resource { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-top: 18px; font-size: 14px; }
 .talk-entry + .talk-entry { padding-top: 24px; border-top: 1px solid var(--line); }
-.talk-photo { margin: 18px 0 0; }
-.talk-photo a { display: block; }
+.talk-overview { display: grid; grid-template-columns: minmax(0, 1fr) clamp(128px, 28%, 188px); gap: 14px 24px; align-items: start; }
+.talk-overview .talk-abstract { margin-bottom: 0; }
+.talk-overview .research-resource { margin-top: 10px; }
+.talk-photo { width: 100%; max-width: 188px; margin: 0; }
 .talk-photo img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
 .talk-photo figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 @media (min-width: 1600px) {
@@ -136,7 +137,7 @@ address { font-style: normal; }
   html { scroll-padding-top: 20px; }
   .sidebar { position: static; width: auto; padding: 24px 24px 15px; border-right: 0; border-bottom: 1px solid var(--line); overflow: visible; }
   .sidebar-profile { display: flex; align-items: center; gap: 18px; padding: 0 0 20px; }
-  .portrait { flex: 0 0 auto; width: 78px; height: 78px; margin-bottom: 0; }
+  .portrait { flex: 0 0 auto; width: 66px; height: 66px; margin-bottom: 0; }
   .site-name { font-size: 23px; }
   .site-role { font-size: 12px; line-height: 1.55; margin-top: 3px; }
   .main-nav { flex-direction: row; flex-wrap: wrap; gap: 3px 7px; padding-right: 35px; }
@@ -151,11 +152,15 @@ address { font-style: normal; }
   .topbar { min-height: 56px; font-size: 12px; }
   .profile-card { padding: 28px; border-radius: 12px; }
 }
+@media (max-width: 620px) {
+  .talk-overview { grid-template-columns: minmax(0, 1fr); }
+  .talk-photo { max-width: 152px; }
+}
 @media (max-width: 480px) {
   .sidebar { padding: 22px 16px 14px; }
   .sidebar-profile { gap: 15px; }
   .sidebar-bottom { right: 16px; top: 30px; }
-  .portrait { width: 70px; height: 70px; }
+  .portrait { width: 58px; height: 58px; }
   .main-nav { gap: 3px; padding-right: 0; }
   .main-nav a { padding: 7px 8px; }
   .main-nav svg { display: none; }
