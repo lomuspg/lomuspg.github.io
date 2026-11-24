@@ -96,7 +96,7 @@ h3 { margin-bottom: 4px; font-size: 16px; line-height: 1.5; font-weight: 600; }
 .honors-list strong { font-weight: 700; }
 address { font-style: normal; }
 .contact-list { margin: 0; font-size: 15px; }
-.contact-list > div { display: grid; grid-template-columns: 5.25em minmax(0, 1fr); gap: 12px; padding: 3px 0; }
+.contact-list > div { display: grid; grid-template-columns: 11em minmax(0, 1fr); gap: 12px; padding: 3px 0; }
 .contact-list dt { color: var(--muted); }
 .contact-list dd { margin: 0; overflow-wrap: anywhere; }
 .page-footer { display: flex; justify-content: space-between; gap: 15px; max-width: 920px; padding: 25px 1px 30px; color: var(--muted); font-size: 12px; }
@@ -173,7 +173,7 @@ address { font-style: normal; }
   .honors-list .entry-date { display: block; }
   .academic-record > span { margin: 0 6px; }
   .contact-list { font-size: 14px; }
-  .contact-list > div { gap: 8px; }
+  .contact-list > div { grid-template-columns: 6.5em minmax(0, 1fr); gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
