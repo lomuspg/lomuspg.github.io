@@ -1,0 +1,27 @@
+.reading-post { grid-template-columns: 190px minmax(0, 1fr); gap: 44px; }
+.reading-post .article-column { min-width: 0; }
+.reading-post .article-header > p:not(.eyebrow) { font-size: 16px; line-height: 1.85; }
+.reading-post .eyebrow { flex-wrap: wrap; letter-spacing: 1px; font-size: 12px; }
+.reading-post .reading-description { color: var(--muted); }
+.reading-download { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin: 22px 0; }
+.reading-download .primary-link { margin: 0; font-size: 15px; }
+.reading-download > span { font-size: 14px; color: var(--muted); }
+.reading-post .article-header .reading-plan { font-size: 14px; color: var(--muted); }
+.reading-post .prose { font-size: 17px; line-height: 1.9; }
+.reading-post .prose h2 { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.reading-post .prose h2 span { font: 15px/2 var(--sans); color: var(--muted); align-self: center; }
+.reading-post mark { background: #fff09b; color: #252e2a; padding: 1px 0; }
+.reading-post .table-scroll { max-width: 100%; overflow-x: auto; }
+.reading-post .prose table { display: table; font-size: 14px; line-height: 1.7; }
+.reading-post .prose td { min-width: 110px; vertical-align: top; }
+.reading-post .prose th { white-space: normal; }
+.reading-post .prose td:nth-child(2) { font-family: 'Segoe UI', system-ui, sans-serif; }
+.reading-post .reading-legend { font-size: 14px; color: var(--muted); }
+.reading-post u { text-underline-offset: 3px; }
+.reading-post .article-end > a { font-size: 16px; }
+@media (max-width: 760px) {
+  .reading-post { display: block; }
+  .reading-post .prose { font-size: 16px; }
+  .reading-post .article-header h1 { font-size: 30px; line-height: 1.4; }
+  .reading-post .prose table { min-width: 620px; }
+}
